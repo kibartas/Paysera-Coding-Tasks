@@ -1,6 +1,8 @@
 #!/bin/python3
 
 def countCows(n):
+	if not isinstance(n, int):
+		return None
 	oneYearCount = 1
 	twoYearCount = 0
 	threeYearCount = 0
@@ -16,5 +18,6 @@ def countCows(n):
 		#print()
 	return oneYearCount + twoYearCount + threeYearCount + adultCount
 	
+print(countCows('hello'))
 for i in range(0, 11):
 	print('countCows(' + str(i) + ') is ' + str(countCows(i)))
