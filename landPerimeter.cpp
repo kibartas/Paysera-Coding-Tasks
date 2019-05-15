@@ -61,4 +61,6 @@ int main() {
 	std::cout << landPerimeter(map) << "\n";
 	map = {"XOOX"};
 	std::cout << landPerimeter(map) << "\n";
+	map = {"X", "X", "X", "X"};
+	std::cout << landPerimeter(map) << "\n";
 }
